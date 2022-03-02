@@ -1,7 +1,36 @@
+/* common styles */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 body {
   font-family: Gilroy;
 }
 
+.container {
+  width: 945px;
+  margin: 0px auto;
+  padding: 0 12px;
+}
+
+.bg-beige {
+  background-color: #f6f6f6;
+}
+
+.title {
+  font-size: 34px;
+  color: #070707;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.subtitle {
+  font-size: 18px;
+  color: #070707;
+  text-align: center;
+}
+
+/* header */
 .header__menu {
   display: flex;
   justify-content: space-between;
@@ -18,30 +47,19 @@ body {
   color: black;
 }
 
-header {
-  width: 945px;
-  margin: 0px auto;
-}
-.main {
-}
-.container {
-  width: 945px;
-  margin: 0px auto;
-}
+/* main */
 .main__container {
   display: flex;
   flex-direction: column;
-  padding: 40px 0px 105px 0px;
+  padding-top: 40px;
+  padding-bottom: 105px;
 }
-.head {
-}
-.container__head {
+.main__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo {
-}
+
 .head__logo {
   display: inline-block;
   font-size: 47.3392px;
@@ -53,8 +71,7 @@ header {
 .head__subtitle {
   align-self: flex-end;
 }
-.languages {
-}
+
 .head__languages {
   display: flex;
   flex-direction: column;
@@ -66,8 +83,7 @@ header {
   writing-mode: vertical-lr;
   padding: 7px 0px;
 }
-.languages__ru {
-}
+
 .languages__eng {
   border-top: 2px solid black;
 }
@@ -78,11 +94,19 @@ header {
   margin-top: 50px;
   background-image: url("../img/01.png");
   height: 347px;
-  width: 944px;
   background-position: center;
   background-size: cover;
 }
 
+/* About me */
+.about-me {
+  padding: 110px 0;
+}
+.about-me__subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
@@ -93,4 +117,126 @@ header {
   src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+/* Skills */
+.skills {
+  padding: 91px 0 110px 0 ;
+}
+
+.skills__title {
+}
+
+.skills__body {
+  display: flex;
+}
+
+.skills__subtitle {
+  margin-top: 69px;
+}
+.skills__list {
+  padding-top: 85px;
+}
+.skills__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills__item__image {
+  width: 90px;
+  height: 90px;
+}
+.skills__item__image_adobe-photoshop {
+  background-image: url(../img/02.png);
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+.skills__item__title {
+  font-size: 18px;
+  color: #828282;
+  margin-top: 25px;
+}
+/* rating */
+.container__rating {
+  display: flex;
+  flex-direction: row;
+  width: 945px;
+  justify-content: space-between ;
+}
+.skills__rating {
+  position: relative;
+  font-size: 25px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+
+.skills__rating::before {
+  content: "★★★★★";
+  display: block;
+}
+
+.skills__rating__item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+.skills__rating__item__input {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+.skills__rating__item__label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #e5e5e5;
+}
+
+.skills__rating__item__label::before {
+  content: "★";
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+.skills__rating__item__input:checked,
+.skills__rating__item__input:checked ~ .skills__rating__item__label {
+  color: #070707;
+}
+
+.skills__rating__item__label:hover,
+.skills__rating__item__label:hover ~ .skills__rating__item__label,
+.skills__rating__item__label:checked ~ .skills__rating__item__label:hover {
+  color: #070707;
+}
+/* второй рэйтинг */
+
+.skills__item__image_adobe-illustrator {
+  background-image: url(../img/03.png);
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+
+.skills__item__image_-After-Effects {
+  background-image: url(../img/04.png);
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+
+.skills__item__image_figma {
+  background-image: url(../img/05.png);
+ background-repeat: no-repeat;
+ background-position: center;
 }

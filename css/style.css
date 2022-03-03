@@ -121,7 +121,7 @@ body {
 
 /* Skills */
 .skills {
-  padding: 91px 0 110px 0 ;
+  padding: 91px 0 110px 0;
 }
 
 .skills__title {
@@ -151,7 +151,6 @@ body {
   background-image: url(../img/02.png);
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 .skills__item__title {
   font-size: 18px;
@@ -163,7 +162,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 945px;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 .skills__rating {
   position: relative;
@@ -171,7 +170,6 @@ body {
   display: inline-block;
   margin-top: 40px;
 }
-
 
 .skills__rating::before {
   content: "★★★★★";
@@ -225,18 +223,51 @@ body {
   background-image: url(../img/03.png);
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 
 .skills__item__image_-After-Effects {
   background-image: url(../img/04.png);
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 
 .skills__item__image_figma {
   background-image: url(../img/05.png);
- background-repeat: no-repeat;
- background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Portfolio */
+.image-rules {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.portfolio {
+  background-color: #f6f6f6;
+}
+.container__portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 112px 0 164px 0;
+}
+.portfolio__img-online-fashion-store {
+  margin-top: 47px;
+}
+
+.portfolio__subtitle-online-fashion-store {
+  margin-top: 45px;
+}
+
+.portfolio__img-reebok {
+  margin-top: 100px;
+}
+.portfolio__subtitle-reebok {
+  margin-top: 45px;
+}
+.portfolio__img-braun {
+  margin-top: 100px;
+}
+.portfolio__subtitle-braun {
+  margin-top: 45px;
 }

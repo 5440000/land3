@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header__menu">
+        <nav id="header__menu" class="header__menu closed">
+          <div id="close__button" class="close-button ">
+            <i class="fas fa-skull-crossbones"></i>
+          </div>
           <a class="menu__link menu__link_active">Home</a>
           <a class="menu__link">About me</a>
           <a class="menu__link">Skills</a>
@@ -21,6 +31,9 @@
     <section class="main">
       <div class="container main__container">
         <div class="main__head">
+          <div id="open__button" class="main__head__open-button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div class="head__logo">Denis<br />Novik</div>
           <div class="head__subtitle">
             UX | UI designer<br />24 years old, Minsk
@@ -363,22 +376,44 @@
           >Online fashion store - Homepage</a
         >
         <img
-          class="portfolio__img-reebok"
+          class="portfolio__img-reebok image-rules"
           src="./img/07.png"
-          alt="Reebok image-rules"
+          alt="Reebok "
         />
         <a class="subtitle portfolio__subtitle-reebok" href="#"
           >Reebok Store - Concept</a
         >
         <img
-          class="portfolio__img-braun"
+          class="portfolio__img-braun image-rules"
           src="./img/08.png"
-          alt="Braun image-rules"
+          alt="Braun "
         />
         <a class="subtitle portfolio__subtitle-braun" href="#"
           >Braun Landing Page - Concept</a
         >
       </div>
     </section>
+    <secion class="contacts">
+      <div class="container container__contacts">
+        <h2 class="title">Contacts</h2>
+        <p class="subtitle">Want to know more or just chat? You are welcome!</p>
+        <button class="contacts_button">Send message</button>
+        <div class="contacts__list-icons">
+          <div class="icon icon__linkedin"><i class="fab fa-linkedin"></i></div>
+          <div class="icon icon__instagramm">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="icon icon__be"><i class="fab fa-behance-square"></i></div>
+          <div class="icon icon__basket">
+            <i class="fal fa-basketball-ball"></i>
+          </div>
+        </div>
+        <p class="contacts__subtitle">
+          Like me on<br />
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
+    </secion>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
